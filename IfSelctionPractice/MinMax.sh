@@ -1,5 +1,5 @@
 #!/bin/bash -x
-
+# Getting 5 Random Numbers
 num1=$((RANDOM%1000+99))
 num2=$((RANDOM%1000+99))
 num3=$((RANDOM%1000+99))
