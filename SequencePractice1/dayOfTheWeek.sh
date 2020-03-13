@@ -7,12 +7,12 @@ month=${args[0]}
 day=${args[1]}
 year=${args[2]}
 
-year=$(( $year-( 14 - $month ) / 12 ))
-x=$(( $year + $year / 4 - $year / 100 + $year / 400 ))
-month=$(( $month + 12 * (( 14 - $month ) / 12) - 2 ))
-day=$(( ($day + $x + 31 * $month / 12 ) % 7))
+year0=$(( $year-( 14 - $month ) / 12 ))
+x=$(( $year0 + $year0 / 4 - $year0 / 100 + $year0 / 400 ))
+month0=$(( $month + 12 * (( 14 - $month ) / 12) - 2 ))
+day0=$(( ($day + $x + 31 * $month0 / 12 ) % 7))
 
-case $day in
+case $day0 in
 	0)
 		echo "Day of the date $@ is Sunday"
 		;;
