@@ -5,7 +5,7 @@ args=("$@")
 echo $@
 day=${args[0]}
 month=${args[1]}
-#day=${args[0]}
+
 
 if [ $month -eq 3 ];
 then
