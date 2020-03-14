@@ -1,5 +1,5 @@
 #!/bin/bash -x
-
+#Find the day of Week Using Else-If
 read -p "Enter the Number:" x
 
 if [ $x -eq  0 ]
