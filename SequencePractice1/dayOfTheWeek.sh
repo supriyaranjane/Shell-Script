@@ -12,6 +12,14 @@ x=$(( $year0 + $year0 / 4 - $year0 / 100 + $year0 / 400 ))
 month0=$(( $month + 12 * (( 14 - $month ) / 12) - 2 ))
 day0=$(( ($day + $x + 31 * $month0 / 12 ) % 7))
 
+if [ $month -gt 12 ] 
+	then 
+			echo "Invalid Month"
+elif [ $day -gt 31 ] 
+   then 
+         echo "Invalid day"
+else
+
 case $day0 in
 	0)
 		echo "Day of the date $@ is Sunday"
@@ -34,7 +42,5 @@ case $day0 in
 	6)
 		echo "Day of the date $@ is Saturday"
 		;;
-	*)
-		echo "Invalid day"
-		;;
 esac
+fi
