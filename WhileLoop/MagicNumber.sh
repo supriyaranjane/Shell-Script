@@ -1,4 +1,5 @@
 #!/bin/bash -x
+#code for finding the magic Number
 low=1
 high=100
 while [ $low -lt $high ]
