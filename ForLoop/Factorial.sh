@@ -1,4 +1,5 @@
 #!/bin/bash -x
+#Finding the factorial of the number
 read -p "Enter Number:" Num
 
 factorial=1
