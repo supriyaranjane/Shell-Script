@@ -1,5 +1,5 @@
 #!/bin/bash -x
-function  getDegF(){
+function getDegF(){
 	read -p "enter the temperature in celcius: " degC
 	degF=$(( ($degC*9/5) + 32 ))
 }
@@ -18,4 +18,5 @@ case $ch in
 	2)
 		$(getDegC)
 		;;
+
 esac
